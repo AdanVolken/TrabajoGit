@@ -10,7 +10,11 @@ $media= round(($nota1+$nota2)/2);
 echo "El alumno: $nombre $apellido"."<br><br>";
 echo "Tiene las siguientes notas, Parcial 1: $nota1 y en el Parcial 2: $nota2". "<br><br>";
 echo "El promedio de las notas es: $media  ";
-if ($media<=5)
+if ($media<=2)
+{
+    echo "Libre";
+} 
+else if($media<=5)
 {
     echo "Desaprobado";
 }
@@ -18,3 +22,8 @@ else if ($media>=6)
 {
     echo "Aprobado";
 }
+else if($media>=8) 
+{
+    echo "Felicitaciones, estas promocionado!";
+}
+
